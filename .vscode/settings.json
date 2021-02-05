@@ -1,0 +1,6 @@
+{
+    "liveServer.settings.port": 5500,
+    "liveServer.settings.useLocalIp": true,
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": "
+    chrome --incognito --headless --remote-debugging-port=5500 C:\Program Files (x86)\Google\Chrome\Application\Google Chrome.exe",
+}
