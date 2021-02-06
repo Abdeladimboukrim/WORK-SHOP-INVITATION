@@ -7,9 +7,10 @@
 
 .nav{
     display: flex;       
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     list-style: none;
+    height: 66px;
 }
 .invitation{
     padding: 11px;    
@@ -25,65 +26,90 @@ margin: 22px;
     justify-items:initial;
 }
 .menu li{
-    padding: 10px;
+   display: flex;
+   justify-content: space-around;
+}
+.find{
+    background-color: #FFF; 
+    border-radius: 6px;
+}
+.login button{
+    border:0;
+    background-color: #FFF;
 }
 .login li{ 
     display: inline;
     justify-content: space-between;
-    list-style: none;
-    color: rgb(77, 75, 75);
+    list-style:none;    
     padding: 6px;
- }
- .logo-place li{
-     display: inline ;
-     align-content:center;
-     background-size: cover;
-     padding:10px;
- }
-.banner{
-    display: flex;
-    flex-wrap: nowrap;
-    background-color: #000;
-    height: 270px;
-    padding:  3%;
-    position: relative;
-}
-.banner-left{
-    color: #FFF; 
-    background-color: #000;
-    position: absolute;  
-    z-index: 1;
       
 }
+.logo-place{
+    margin: 3%;
+}
+ .logo-place li{
+     display: inline ;        
+     background-size: 23%;
+     max-width: 23%;
+     padding:10px;
+ }
+ .banner{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-left: 30px;
+    background-color: #000;
+    height: 220px;
+    margin: 3%;    
+    position: relative;
+}
 
-.banner-right{  
-    
+.banner-left{
+    color: #FFF; 
+    z-index: 1;      
+}
+.banner-left p{
+   width: 55%;
+   margin-bottom: 30px;
 }
 .foto img{
     width: 24%;
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     right: 41px;
-    top: -26px;
-
+    top: -15px;
 }
 .foto-2 img{
     width: 40%;
-    position: absolute;
-    z-index: 1;
-    right: 21px;
+    position:  absolute;
+    z-index: 2;
+    right: 30px;
     top: -40px;
 }
 
 .illustration-place{
     display: flex;
+    flex-flow: row;
+    margin: 3%;
 }
 .animation{
     width: 30%;
 }
 .message{
     padding:5%;
+    width: 37%;
     text-align: start;
+    justify-content: ;
+}
+.google:before{
+    content: "";
+    display: block;
+    background: url("images/Google__G__Logo.svg") no-repeat;
+    width: 17px;
+    height: 20px;
+    float: left;
+    margin: 0 0 0 0;
+
 }
 h2:before{
         content: "";
@@ -92,8 +118,53 @@ h2:before{
         width: 35px;
         height: 25px;
         float: left;
-        margin: 0 0 0 0;    
+        margin: 0 0 0 0;
+}
+.star{
+    background-image: linear-gradient( to right,
+    rgba(242, 115, 60, 1) ,
+    rgba(168, 49, 165, 1) );
+    padding: 7px;
+    border: 0;
+    border-radius: 5px;
+    z-index: 5;
+}
+.select {
+    border: none;
 }
 .grid-place{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(22%,1fr));
+column-gap: 1.4%;
+padding: 3%;
+}
+
+.footer{
+    display: flex;
+    justify-content:space-between;
+    background-color: #000;
+    height: 166px;
+    padding: 3%;
+}
+.left{    
+    color: #FFF;
+    width: 25%;
+}
+.right {
+    color: #FFF;
+    display: flex;
+}
+.right ul{ 
+    padding: 22px;
+}
+.right li {
+    color: #FFF;
+    display: flex;
+    
+    text-decoration: none;
+}
+
+.copy-right{
+    text-align: center;
 
 }
